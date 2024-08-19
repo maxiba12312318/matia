@@ -1,0 +1,447 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+}
+
+            /*     HEADER            */
+
+    header{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+
+.busqueda{
+    width: 100%;
+    background-color: rgb(100, 99, 99);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 20%;
+    align-items: center;
+}
+nav{
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    width:6%;
+}
+nav a img{
+width: 70%;
+height: 70%;
+}
+.busqueda-container{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+}
+.logo{
+    display: flex;
+    height: 10%;
+    width: 5%;
+    align-items: center;
+    justify-content: center;
+    
+}
+.logo a img{
+    width: 100%;
+    height: 100%;
+}
+.busqueda-container input{
+    background-color: rgb(189, 179, 179);
+    color: black;
+    padding: 5px;
+    border:none;
+}
+.barra-nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(145, 142, 142);
+    width: 100%;
+    height: auto;
+}
+.hombre{
+display: flex;
+width: 30%;
+height: auto;
+justify-content: space-between;
+font-size: 2vw;
+}
+.hombre a{
+    text-decoration: none;
+    color: white;
+}
+.hombre a:hover{
+    color: black;
+    text-decoration: underline;
+}
+.marcas{
+    height: auto;
+    margin-left: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    width: 15%;
+}
+.marcas img{
+     width: 100%;
+}
+
+
+
+/*                MAIN              */  
+main{
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+background-color: rgb(233, 233, 233);
+margin-top: 170px;
+}
+.matia-contenedor{
+    
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.matia{
+    display: flex;
+    width: 70%;
+    height: 70%;
+    background-image: url(../img/pexels-pixabay-531035.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+.matia img{
+    width: 40%;
+    height: 50%;
+}
+
+.grid{
+    width: 80%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 10px;
+    background:linear-gradient(to bottom,#d6e4cb, #ddcec8)
+}
+.imagen{
+    border: solid 10px black;
+    background-color: #333;
+
+}
+.imagen img{
+    width: 100%;
+    height: 100%;
+}
+.modelo1{
+    grid-row: 2/3;
+    grid-column: 1/2;
+}
+.modelo2{
+    grid-row: 1/2;
+    grid-column: 2/3;
+}
+.modelo3{
+    grid-row: 3/4;
+    grid-column: 2/3;
+}
+.modelo4{
+    display: flex;
+    align-items: center;
+    grid-column: 3/4;
+    grid-row:2/4 ;
+
+}
+.modelo4 img{
+    width: 100%;
+    height: 70%;
+}
+.modelo5{
+    grid-column: 4/5;
+    grid-row: 1/3;
+    display: flex;
+    align-items: center;
+}
+.modelo5 img{
+    
+    width: 100%;
+    height: 70%;
+}
+
+/*                ZAPATILLAS                          */
+
+.zapatillasContenedor{
+    max-width: 70%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+}
+.zapatillasTitulo{
+    margin: 50px;
+}
+.zapatillasTitulo h2{
+    font-size: 1.6vw;
+    font-weight: 700;
+    text-decoration: underline solid #333;
+    text-decoration-thickness: 2px;
+    text-decoration-color: rgb(98, 99, 99);
+}
+.zapatillasTitulo{
+    text-align: center;
+}
+.zapatillasCarta{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    width: 18%;
+    border: solid 5px grey;
+}
+.zapatillasCarta p{
+    font-size: 1.3vw;
+}
+.zapatillasCarta h2{
+    font-size: 1.5vw;
+}
+.zapatillasCarta img{
+    width: 100%;
+    height: 67%;
+}
+
+
+/*                   FOOTER                       */
+
+footer{
+background-color: hsl(0, 0%, 53%);
+margin-top: 30px;
+display: flex;
+flex-direction: column;
+align-items: center;
+width: 100%;
+height: auto;
+}
+.envios{
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+}
+.envios div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.envios div img{
+    width: 35px;
+    height: 35px;
+}
+.envios div p{
+font-size: 1.1vw;
+color: rgb(0, 0, 0);
+}
+.footerContenedor{
+    width: 70%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    flex-direction: row;
+    background-color: hsl(0, 0%, 53%);
+    justify-content: center;
+    margin-top: 15px;
+}
+.footerLow{
+    margin-bottom: 30px;
+}
+.footerLow ul li a{
+    text-decoration: none;
+    color: white;
+}
+.footerLow ul li a:hover{
+    color: rgb(39, 41, 41);
+}
+.footerLow ul{
+    list-style-type: none;
+}
+.primero{
+    grid-column: 1/2;
+}
+
+.segundo{
+    grid-column: 2/3;
+}
+
+.tercero{
+    display: flex;
+    justify-content: end;
+    align-items:start;
+    grid-column: 4/6;
+    gap: 30px;
+}
+.tercero img{
+    width: 40px;
+    height: 40px;
+}
+
+
+/*              HOMBRE.HTML  MUJER.HTML NINOS.HTML               */
+
+
+.hero{
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+}
+.contenedor{
+    width: 32%;
+    height: 400px;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    
+}
+.contenedor a{
+    padding: 11px;
+    justify-content: center;
+    display: flex;
+    font-size: 16px;
+    font-weight: 800;
+    margin-top: 8px;
+    color: white;
+    border: solid 3px rgb(91, 128, 91);
+    text-decoration: none;
+    background-color: black;
+}
+.hombres{
+    background-image: url(../img/hombrecontainer.jpg);
+}
+.mujeres{
+    
+    background-image: url(../img/mujercontainer.jpg);
+}
+.ninos{
+    background-image: url(../img/ninocontenedor.jpg);
+}
+#hombrePag .hombres{
+height: 600px;
+}
+#mujerPag .mujeres{
+    height: 600px;
+}
+#ninosPag .ninos{
+    height: 600px;
+}
+
+/*                             ADIDAS.HTML                      */
+
+.contenedorTriple{
+    border: #8a1111 solid 3px;
+    width: 60%;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: row;
+}
+.cartaZapatillas{
+    border: solid 3px black;;
+   
+}
+
+
+@media screen and (max-width: 1075px) {
+    .grid {
+        width: 100%;
+    }
+   .hero{
+        width: 100%;
+    }
+    
+}
+@media screen and (max-width: 870px) {
+    .grid {
+        width: 100%;
+    }
+    .matia{
+        height: 30%;
+        width: 90%;
+    }
+    .contenedor{
+        height: 300px;
+    }
+    .contenedor a{
+        padding: 6px;
+        font-size: 10px;
+    }
+}
+@media screen and (max-width:765px){
+    .envios{
+        width: 90%;
+        flex-direction: column;
+        align-items: start;
+    }
+    main{
+        margin-top: 120px ;
+    }
+}
+@media screen and (max-width:550px){
+    
+    main{
+        margin-top: 90px;
+    }
+    .footerContenedor{
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+    .primero{
+        grid-row:1/2;
+    }
+    .segundo{
+        margin-top: 30px;
+        grid-row: 2/3;
+        grid-column: 1/2;
+    }
+    .tercero{
+        grid-row: 3/4;
+    }
+    .footerLow ul li a{
+        font-size: 8px;
+    }
+    .contenedor{
+        height: 200px;
+    }
+    #hombrePag .hombres{    
+        height: 320px;
+
+    }
+    #mujerPag .mujeres{
+        height: 320px;
+    }
+    #ninosPag .ninos{
+        height: 320px;
+    }
+    .contenedor a{
+        padding: 3px;
+        font-size: 8px;
+    }
+}
