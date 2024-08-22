@@ -33,7 +33,17 @@ body{
                 width: 60px;
                 height: 60px;
             }
-
+            .navbar {
+                position: fixed !important; 
+                top: 0;
+                width: 100%;
+                background-color: rgb(121, 118, 118);  
+                padding: 15px;
+                text-align: center;
+                z-index: 1000;
+            }
+           
+            
 /*                MAIN              */  
 main{
 display: flex;
@@ -41,7 +51,7 @@ align-items: center;
 justify-content: center;
 flex-direction: column;
 background-color: rgb(233, 233, 233);
-
+margin-top: 100px;
 }
 .matia-contenedor{
     
@@ -154,14 +164,14 @@ background-color: rgb(233, 233, 233);
     border: solid 5px grey;
 }
 .zapatillasCarta p{
-    font-size: 1.3vw;
+    font-size: 1.0vw;
 }
 .zapatillasCarta h2{
-    font-size: 1.5vw;
+    font-size: 1.1vw;
 }
 .zapatillasCarta img{
     width: 100%;
-    height: 67%;
+    height: 60%;
 }
 
 
@@ -290,22 +300,70 @@ height: 600px;
 #ninosPag .ninos{
     height: 600px;
 }
-
-/*                             ADIDAS.HTML                      */
-
-.contenedorTriple{
-    border: #8a1111 solid 3px;
-    width: 60%;
-    justify-content: space-around;
+.hombre-3-container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.hombre-container-flex{
+    width: 50%;
     display: flex;
     flex-direction: row;
 }
-.cartaZapatillas{
-    border: solid 3px black;;
-   
+.hombre-superior{
+    width: 32%;
+    text-align: center;
+    margin: 10px;
+}
+.h2-superior{
+  
+    background-color: #b3e276;
+    display: inline-block;
+    border: solid 2px black;
+    border-radius: 5px;
+    padding: 5px;
+}
+.carta-superior{
+    border: solid 2px black;
+    height: 400px;
+    margin: 15px;
+}
+.carta-superior .texto{
+    width: 100%;
+    height: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(214, 212, 212);
+}
+.carta-superior .texto a{
+    border: 2px black solid;
+    border-radius: 8px;
+    background-color: greenyellow;
+    color: black;
+    text-decoration: none;
+}
+.carta-superior .texto a:hover{
+    background-color: rgb(87, 129, 23);
+}
+.carta-superior img{
+    width: 100%;
+    height: 100%;
+}
+.carta-superior .img{
+    width: 100%;
+    height: 65%;
 }
 
 
+@media screen and (max-width: 1475px){
+.hombre-container-flex{
+    width: 80%;
+}
+}
 @media screen and (max-width: 1075px) {
     .grid {
         width: 100%;
@@ -313,7 +371,12 @@ height: 600px;
    .hero{
         width: 100%;
     }
-    
+    .carta-superior a,h2,p{
+        font-size: 15px;
+    }
+.hombre-container-flex{
+    width: 100%;
+}
 }
 @media screen and (max-width: 870px) {
     .grid {
@@ -337,11 +400,25 @@ height: 600px;
         flex-direction: column;
         align-items: start;
     }
-   
+   .carta-superior{
+    height: 210px;
+   }
+   .carta-superior .img{
+    height: 60%;
+   }
+  
 }
 @media screen and (max-width:550px){
-    
-   
+    .carta-superior .txt{
+        font-size: 10px;
+       }
+    .carta-superior{
+        height: 150px;
+    }
+    .carta-superior .img{
+        height: 46%;
+    }
+
     .footerContenedor{
         grid-template-rows: 1fr 1fr 1fr;
     }
