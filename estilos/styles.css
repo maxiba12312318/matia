@@ -9,15 +9,11 @@ body{
     font-family: "Poppins", sans-serif;
 }
 
-            /*     HEADER            */
-
-            .menu-color{
-                background-color: rgb(121, 118, 118)
-            }
-            .boton-bootstrap{
-                border: 1px solid rgb(194, 193, 193) !important; 
-                background-color: rgba(236, 236, 235, 0.24) !important;
-                color: white !important;
+            /*     HEADER     */       
+            .btn{
+                border: 1px solid rgb(194, 193, 193) ; 
+                background-color: rgba(236, 236, 235, 0.24) ;
+                color: white ;
             }
             .boton-bootstrap:hover{
                 background-color: white !important;
@@ -41,7 +37,7 @@ body{
                 padding: 15px;
                 text-align: center;
                 z-index: 1000;
-            }
+            } 
            
             
 /*                MAIN              */  
