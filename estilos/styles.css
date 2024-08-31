@@ -14,6 +14,7 @@ body{
                 border: 1px solid rgb(194, 193, 193) ; 
                 background-color: rgba(236, 236, 235, 0.24) ;
                 color: white ;
+                transition: 1s;
             }
             .boton-bootstrap:hover{
                 background-color: white !important;
@@ -21,6 +22,7 @@ body{
             }
             .nav-link{
                 color: white !important;
+                transition: 0.6s;
             }
             .nav-link:hover{
                 color: black !important;
@@ -263,8 +265,8 @@ color: rgb(0, 0, 0);
     background-position: center;
     background-size: cover;
     text-align: center;
-    
 }
+
 .contenedor a{
     padding: 11px;
     justify-content: center;
@@ -276,6 +278,11 @@ color: rgb(0, 0, 0);
     border: solid 3px rgb(91, 128, 91);
     text-decoration: none;
     background-color: black;
+    transition: 1s;
+}
+.contenedor a:hover{
+    background-color: rgb(29, 28, 28);
+    transform: scale(1.1);
 }
 .hombres{
     background-image: url(../img/hombrecontainer.jpg);
@@ -413,6 +420,7 @@ height: 600px;
     color: black;
     text-decoration: none;
     padding: 2px;
+    transition: 0.5s;
 }
 .texto-botines a:hover{
     background-color: rgb(87, 129, 23);
@@ -546,17 +554,25 @@ height: 600px;
         grid-column: 1/2;
         grid-row: 2/4;
     }
-    
+    .texto-botines h3,h2,a,p{
+        font-size: 8px;
+    }
 }   
 @media screen and (max-width:550px){
-    .carta-superior .txt{
+    .carta-superior .texto a{
         font-size: 10px;
+        padding: 1px;
        }
+       .carta-superior .texto p,h2{
+        font-size: 8px;
+       }
+       
     .carta-superior{
         height: 150px;
+        padding: 0px;
     }
     .carta-superior .img{
-        height: 46%;
+        height: 66%;
     }
 
     .footerContenedor{
