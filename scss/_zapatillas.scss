@@ -1,0 +1,45 @@
+.zapatillasContenedor {
+    max-width: 70%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+}
+
+.zapatillasTitulo {
+    margin: 50px;
+    text-align: center;
+
+    h2 {
+        font-size: 1.6vw;
+        font-weight: 700;
+        text-decoration: underline solid #333;
+        text-decoration-thickness: 2px;
+        text-decoration-color: rgb(98, 99, 99);
+    }
+}
+
+.zapatillasCarta {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    width: 25%;
+    border: solid 5px grey;
+
+    p {
+        font-size: 1.0vw;
+    }
+
+    h2 {
+        font-size: 1.1vw;
+    }
+
+    img {
+        width: 100%;
+        height: 60%;
+    }
+}
