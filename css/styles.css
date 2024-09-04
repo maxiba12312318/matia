@@ -30,11 +30,6 @@ body {
   color: black !important;
 }
 
-.navbar-brand img {
-  width: 60px;
-  height: 60px;
-}
-
 .navbar {
   position: fixed !important;
   top: 0;
@@ -51,7 +46,7 @@ main {
   justify-content: center;
   flex-direction: column;
   background-color: rgb(233, 233, 233);
-  margin-top: 100px;
+  margin-top: 80px;
 }
 
 .matia-contenedor {
