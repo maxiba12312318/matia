@@ -52,6 +52,13 @@
     .hombre-container-flex {
       width: 100%;
     }
+    .zapatillasContenedor{
+      max-width: 70%;
+    }
+    .zapatillasCarta a{
+        border: 1px black solid;
+        font-size: 11px;
+    }
   }
   
   @media screen and (max-width: 870px) {
@@ -98,6 +105,10 @@
     .carta-superior img {
       height: 130px;
     }
+    .zapatillasCarta a{
+      border: 1px black solid;
+      font-size: 9px;
+  }
   }
   @media screen and (max-width:665px){
     .botines-contenedor{
